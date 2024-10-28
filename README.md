@@ -21,9 +21,10 @@
   - conflict resolutions merken und ggf wiederverwenden:
     - `git config --global rerere.enabled true`
 
-- Neue Datei erstellen, dann hinzufügen:
+- Neue Datei erstellen oder ändern, dann hinzufügen:
   
   - `git add <dateiname>`
+  - `git add -p` "patch mode", einzelne Änderungen werden angezeigt und können hinzugefügt oder ignoriert werden
 
 - Commit erstellen:
   
@@ -34,6 +35,10 @@
 - Commits veröffentlichen:
   
   - `git push`
+  
+  - remote-tracking dabei aktivieren für den aktuellen Branch
+    
+    - `git push -u origin HEAD`
 
 - Änderungen von remote holen und mergen:
   
