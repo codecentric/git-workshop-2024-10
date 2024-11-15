@@ -78,4 +78,12 @@
 
 - Branch auf einen anderen Stand zurücksetzen: `git reset --hard <commit-id>`
 
+- Alle Änderungen eines Commits anzeigen: `git show <commit_id>`
+
+- Unterschiede zwischen zwei Commits: `git diff <commit_id 1> <commit_id 2>`
+
+- Lokale Änderungen die noch nicht geaddet sind: `git diff`
+
+- Lokale Änderungen geaddet aber noch nicht committed: `git diff --staged`
+
 - 
