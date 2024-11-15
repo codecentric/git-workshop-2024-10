@@ -44,6 +44,10 @@
   
   - `git pull`
 
-
-
 - `HEAD` ist das, was ich gerade lokal ausgecheckt habe
+
+- Historie anzeigen:
+  - `git log`
+  - `git log --graph --pretty=oneline`
+    - Alias anlegen:
+      - `git config alias.logg "log --graph --pretty=oneline"`
