@@ -70,7 +70,6 @@
     `git rebase <zielbranch>` (also z.B. `git rebase main`)
     `git switch <zielbranch>`
     `git merge <anderer branch>`
-    
 
 - Alle lokalen Aktionen sehen mit `git reflog`
 
@@ -86,4 +85,18 @@
 
 - Lokale Änderungen geaddet aber noch nicht committed: `git diff --staged`
 
-- 
+- Fehlersuche: ersten "schlechten" Commit finden:
+  
+  - `git bisect start`
+    `git bisect bad`
+    früheren guten Commit auswählen:
+    `git checkout <commit_id>`
+    `git bisect good`
+    Ab hier weiter, mit good/bad, bis git den ersten schlechten Commit zeigt.
+    
+    abbrechen/zurücksetzen mit `git bisect reset`
+
+- lokale Änderungen ohne Commit kurz "zur Seite schieben":
+  `git stash`
+  zurückholen:
+  `git stash pop`
