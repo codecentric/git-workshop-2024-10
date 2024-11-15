@@ -18,7 +18,9 @@
   - Pull immer mit merge:
     
     - `git config --global pull.rebase false`
+  
   - conflict resolutions merken und ggf wiederverwenden:
+    
     - `git config --global rerere.enabled true`
 
 - Neue Datei erstellen oder ändern, dann hinzufügen:
@@ -47,7 +49,33 @@
 - `HEAD` ist das, was ich gerade lokal ausgecheckt habe
 
 - Historie anzeigen:
+  
   - `git log`
   - `git log --graph --pretty=oneline`
     - Alias anlegen:
       - `git config alias.logg "log --graph --pretty=oneline"`
+
+- mergen mit potentiell "fast forward" oder merge commit
+  
+  - `git merge <anderer branch>`
+
+- mergen mit squash (alle Änderungen in einen neuen Commit packen)
+  
+  - `git merge --squash <anderer branch>`
+    `git commit`
+
+- rebase um den branch von einem neueren punkt abzweigen zu lassen
+  
+  - `git switch <anderer branch>`
+    `git rebase <zielbranch>` (also z.B. `git rebase main`)
+    `git switch <zielbranch>`
+    `git merge <anderer branch>`
+    
+
+- Alle lokalen Aktionen sehen mit `git reflog`
+
+- einzelnen Commit auschecken und anschauen `git checkout <commit-id>`
+
+- Branch auf einen anderen Stand zurücksetzen: `git reset --hard <commit-id>`
+
+- 
